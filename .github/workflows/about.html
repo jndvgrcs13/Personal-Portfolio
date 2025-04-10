@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent scrolling */
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://i.ibb.co/4ZBy2BCF/about.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        * {
+            text-decoration: none;
+        }
+
+        .navbar {
+            font-family: sans-serif;
+            padding-right: 30px;
+            padding-left: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.7); 
+            backdrop-filter: blur(8px); 
+        }
+
+        .navdiv {
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none; 
+            display: inline-block;
+        }
+
+        li a {
+            color: white; 
+            font-size: 15px; 
+            font-weight: lighter; 
+            margin-right: 25px;
+        }
+
+        li a:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: white;
+            text-shadow: black;
+            font-weight: bold;
+            transform: scale(1.1);
+        }
+
+        .about {
+            font: bold;
+            font-size: 100px;
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+        .about:hover {
+            font-size: 100px;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            color: white; 
+            text-shadow:
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px white,
+        0 0 40px white,
+        0 0 80px white
+        }
+
+        .content {
+            font: bold;
+            font-size: 18px;
+            color: white;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            right: 10%;
+            text-align: justify;
+            word-spacing: 2px;
+            line-height: 25px;
+        }
+
+        .profile-image {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid white;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        .read {
+            position: absolute;
+            margin-left: 400px;
+            width: 100px;
+            margin-top: 20px;
+            padding: 6px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+            font-family: sans-serif;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .read:hover {
+            background: rgb(255, 255, 255);
+            color: black;
+            transform: scale(1.1);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="https://i.ibb.co/G376h2r8/logo.png" alt="Logo"></div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio1.html">PORTFOLIO</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about">ABOUT</div>
+    <img src="https://i.ibb.co/kV96hqpR/profile.jpg" alt="Profile Picture" class="profile-image">
+    
+    <div class="content">
+        <p>
+            Hi, I’m Jhon Dave Garces, a Passionate and Driven
+            BSIT student at Our Lady of Fatima University. I’m
+            currently focused on improving my programming and 
+            web development skills. I’m committed to continuous
+            learning growth, and I’m confident in my ability to
+            contribute significantly to the tech industry.
+        </p>
+        
+        <div class="button">
+            <a class="read" href="information.html">Read More</a>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2025 Jhon Dave Garces. All Rights Reserved.
+    </footer>
+</body>
+</html>

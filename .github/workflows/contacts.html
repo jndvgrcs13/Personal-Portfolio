@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            background-image: url(https://i.ibb.co/rRMKq21K/contacts.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        * {
+            text-decoration: none;
+        }
+        .navbar {
+    font-family: sans-serif;
+    padding-right: 30px;
+    padding-left: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(8px); 
+    width: 100%;  
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+        li a {
+            color: white;
+            font-size: 15px;
+            font-weight: lighter;
+            margin-right: 25px;
+        }
+        li a:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: white;
+            text-shadow: black;
+            font-weight: bold;
+            transform: scale(1.1);
+        }
+        h1 {
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .box1, .box2, .box3, .box4 {
+            width: 110px;
+            height: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .box1:hover, .box2:hover, .box3:hover, .box4:hover {
+            transform: scale(1.1);
+        }
+        .contact-form {
+            width: 60%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.6); 
+            padding: 50px;
+            padding-bottom: 100px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 15px;
+
+}
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 5px 2px;
+            margin: 10px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            position: absolute;
+            margin-left: 90px;
+        
+        }
+        .contact-form button:hover {
+            background-color: black;
+            color: white;
+        }
+        h2{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .container{
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 400px;
+        }
+        .contacts{
+            font-size: 100px;
+            color: white;
+            margin-left: 20px;
+        }
+        .contacts:hover{
+            font-size: 100px;
+            color: white;
+            margin-left: 20px;
+            color: white; 
+            text-shadow:
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px white,
+        0 0 40px white,
+        0 0 80px white
+        }
+        
+        .footer {
+    position: absolute;
+    margin-top: 280px;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.contactme{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="https://i.ibb.co/G376h2r8/logo.png" alt="Logo"></div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio1.html">PORTFOLIO</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contacts">CONTACTS</div>
+    <div class="container">
+    
+        <div class="box1">
+         <a href="tel:+639124141740"><img src="https://i.ibb.co/PGTNS8NT/1.png" alt="phone number" width="200px" height="200px"></a>
+
+        </div>
+        <div class="box2">
+         <a href="https://www.facebook.com/jhondave.garces.1"><img src="https://i.ibb.co/Zp9cpHVq/2.png" alt="facebook"  width="200px" height="200px"></a>
+
+        </div>
+        <div class="box3">
+         <a href="https://www.instagram.com/jndvgrcs/"><img src="https://i.ibb.co/93kXmtw8/3.png" alt="instagram"width="200px" height="200px"></a>
+
+        </div>
+        <div class="box4">
+         <a href="mailto:jhondavegarces01@gmail.com"><img src="https://i.ibb.co/tPpttvjh/4.png" alt="gmail" width="200px" height="200px"></a>
+
+        </div>
+
+    
+</body>
+<footer class="footer">
+    <p>&copy; 2025 Jhon Dave Garces. All rights reserved.</p>
+  </footer>
+</html>
